@@ -19,10 +19,10 @@ function main() {
 
   function releaseObj(obj) {
     var parentPage = obj.parentPage;
+
     var parentSpread = parentPage.parent;
     var doubleObj = obj.duplicate(parentSpread, [0, 0]);
     doubleObj.fit(FitOptions.FRAME_TO_CONTENT);
-    doubleObj.select();
     obj.remove();
   }
 
